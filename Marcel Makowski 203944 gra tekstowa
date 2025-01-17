@@ -1,0 +1,150 @@
+#Importuję biblioteki potrzebne do kompilacji kodu
+import sys
+import time
+import random
+i=random.randint(1,2)
+#Etap pierwszy: podaj swoje imię/ksywkę
+print("Wpisz swoje imię")
+imie=input()
+print("Witaj ",imie)
+print("Dawno, dawno temu w odległej galaktyce..." "\n" "\t"
+"jesteś żołnierzem Rebelii z planety Hoth..." "\n" "\t" "\t"
+"jako największy spośród asów myśliwców zostałeś wytypowany do misji życia..." "\n" "\t" "\t" "\t" "\t" "\t" "\t"
+"zniszczenia GWIAZDY ŚMIERCI...") 
+print("Czy jesteś gotowy podjąć się misji?(tak/nie)")
+odp=input()
+if odp=="tak":
+	print("Świetnie, choć zależy dla kogo... w centrum dowodzenia czekają na Ciebie rozkazy")
+	print("\x1B[3m ... docierasz do centrum dowodzenia, jesteś skierowany do Centrum Maszynowego, w którym przećwiczysz na manipulatorze trasę lotu... nie zapomnij założyć kasku!\x1B[0m")  
+	print("...zostajesz wprowadzony do manipulatora, gdzie masz szansę zweryfikować sprawność maszyny na podstawie instrukcji...") 
+	time.sleep(5)
+	print("Zgłaszasz prawidłowość wszystkich ustawień. Z wieży pada pytanie, czy jesteś gotów do startu. Jaka jest Twoja odpowiedź?")
+	answ=input()
+	if answ=="tak":
+		print("Bardzo dobrze. Możesz rozpocząć procedurę startu.")
+		print("Jesteś już w powietrzu, widzisz, że ta trasa to dla Ciebie duża nowość. Czy zgłaszasz potrzebę nagłego lądowania i chęć rezygnacji?(tak/nie)")
+		dekl=input()
+		if dekl=="nie":
+			print("Świetnie! Tego oczekuje od Ciebie cała Rebelia!")
+			print("To, co przeżyłeś w manipulatorze, było dla Ciebie ogromnym doświadczeniem. Poznałeś wiele zagrożeń związanych z misją, lecz mimo to nie decydujesz się zrezygnować...")
+			print("Po kilkunastu tygodniach ćwiczeń i testów następuje dzień przelotu próbnego, tym razem już w rzeczywistości. Twój przelot będzie jako lot patrolowy, więc polecą z Tobą inni piloci. Nie zapominaj jednak o prawdziwym celu: zidentyfikowaniu poszczególnych punktów misji w rzeczywistym przelocie.")
+			print("Gdy wracasz do bazy, nagle wieża informuje Was o bandytach Imperium, którzy gonią Was w nadziei na zemstę za niedawne straty ich myśliwców. Jak dowódca patrolu, nie namyślając się zbyt długo, uznajesz, że to świetna okazja do przetrenowania się przed dniem, kiedy czeka Cię zniszczenie Gwiazdy Śmierci.")
+			print("Czy rzeczywiście decydujesz się na walkę z myśliwcami Imperium?(tak/nie)")
+			ofc=input()	
+			print("Niestety następuje deszcz meteorytów...")
+
+			if i==2:
+				if ofc=="tak":
+					print("Przetrwałeś...")
+					print("Odważna decyzja, ale z myślą o wyższym celu. To się ceni!")
+					print("Razem z innymi dokonujecie absolutnego zwycięstwa w starciu z pilotami Imperium. Po powrocie do bazy dopinacie ostatnie szczegóły. Czekają Cię teraz trzy dni odpoczynku przed dniem misji.")
+					print("Nastaje dzień misji. Przychodzi do Ciebie Admirał Ackbar z pytaniem, czy utrzymujesz swoją gotowość do zniszczenia celu. Co odpowiadasz?(tak/nie)")
+					got=input()
+					if got=="tak":
+						print("Wspaniale. Admirał przypomina Ci o godzinie odprawy.")
+						print("Stawiasz się na miejscu na czas. Składane są ostatnie raporty mające na celu uaktualnić Twój obraz sytuacji. Zmierzasz do samolotu...")
+						print("Wsiadłeś do myśliwca. Sprawdziłeś uzbrojenie, plan misji. Zatapiasz się w chwili dla siebie, dokonując ostatecznego rozrachunku sumienia oraz rozważenia za i przeciw Twojemu startowi...")
+						print("\x1B[3m...podobnie, jak ostatnim razem, towarzyszyć Ci będą inni piloci, choć ich rolą będzie odciągnięcie uwagi od Ciebie...\x1B[0m")
+						print("\x1B[3m...wzniosłeś się w powietrze. Za 5 minut użyjecie Mocy i przemkniecie w kierunku Death Star - Gwiazdy Śmierci. Stacji, którą masz zniszczyć, by uratować Rebelię przed całkowitym unicestwieniem...\x1B[0m")
+						print("Jesteście blisko gwiazdy śmierci. Odpieracie ataków myśliwców obronnych. Wlatujesz w tunel, który ma Cię doprowadzić do serca Gwiazdy Śmierci - wpuszczenie tam rakiet spowoduje jej eksplozję. Przedzierając się przez zagłębienia stacji, przeżywasz moment słabości... tuż przed miejscem w którym powinieneś strzelić, powstaje w Tobie wątpliwość i rodzi się pytanie: czy dam radę?(tak/nie)")
+						destr=input()
+						if destr=="tak":
+							print("Bardzo dobrze. Wyceluj działo i zaatakuj, gdy zaświeci się czerwona kontrolka.")
+							print("\x1B[3mNastępuje moment ataku. Twoje rakiety trafiają w tunel i zmierzają w kierunku jądra stacji. Teraz jazda stąd! Przecież chcesz wrócić jako bohater;)\x1B[0m")
+							print("Mimo prób zestrzelenia, razem ze swoimi towarzyszami bez szwanku wracacie na Hoth. GWIAZDA ŚMIERCI ZOSTAŁA ZNISZCZONA!")
+							print("Po lądowaniu witają Was tłumy, a Ty na rękach jesteś niesiony przed oblicze księżniczki Lei. Gratuluje Ci ona sukcesu, a także wyraża podziękowanie w imieniu całego ludu Rebelii.")
+							print("\x1B[3m...cudowną atmosferę świętowania małego sukcesu w walce z Imperium przerywa alarm w Centrum Maszynowym, gdy okazuje się, że zbliżają się siły wroga. Czy zdecydujesz się poprowadzić swoich kolegów w walce obronnej? O tym dowiemy się jednak dopiero w sequelu...\x1B[0m")
+					else:
+						print("Serio?! W takim momencie rezygnujesz?!?! Przemyśl swoją decyzję jeszcze raz. Dobrze. Czy napewno rezygnujesz z ataku?")
+						destroy=input()
+						if destroy=="tak":
+							print("Twoja decyzja jest niezrozumiała. Równie dobrze możesz nie wracać na Hoth. \n Przegrałeś.")
+						else:
+							print("Dobrze, że zmieniłeś decyzję. A teraz: wal śmiało i zniszcz tę stację!!!")
+							print("\x1B[3m...w takim razie atakujesz... Twoje rakiety trafiają w tunel i zmierzają w kierunku jądra stacji. Teraz jazda stąd! Przecież chcesz wrócić jako bohater;)\x1B[0m")
+							print("Mimo prób zestrzelenia, razem ze swoimi towarzyszami bez szwanku wracacie na Hoth. GWIAZDA ŚMIERCI ZOSTAŁA ZNISZCZONA!")
+							print("Po lądowaniu witają Was tłumy, a Ty na rękach jesteś niesiony przed oblicze księżniczki Lei. Gratuluje Ci ona sukcesu, a także wyraża podziękowanie w imieniu całego ludu Rebelii.")
+							print("\x1B[3m...cudowną atmosferę świętowania małego sukcesu w walce z Imperium przerywa alarm w Centrum Maszynowym, gdy okazuje się, że zbliżają się siły wroga. Czy zdecydujesz się poprowadzić swoich kolegów w walce obronnej? O tym dowiemy się jednak dopiero w sequelu...\x1B[0m")							
+				else:
+					print("Zawodzisz wszystkich, przede wszystkim marnując czas i wysiłek. Choć niektórzy mogą zrozumieć Twoją decyzję, to jednak powstanie niezmywalna plama na Twoim honorze...")
+			else:
+				print("Uszkodzenia Twojego ciała są tak duże, że umierasz... żegnaj!") 
+		else:
+			print("Zawiodłeś wszystkich obywateli Rebelii. Czeka Cię kara za stratę czasu na takiego tchórza jak Ty!")
+	else:
+		print("W kokpicie pojawia się hologram księżniczki Lei, która mówi: Zawiodłeś mnie," ,imie)
+else: 
+	print("Przegrałeś")
+print("Czy chcesz zagrać ponownie?(tak/nie)")
+koniec=input()
+while koniec!="nie":
+	print("Wpisz swoje imię")
+	imie=input()
+	print("Witaj ",imie)
+	print("Dawno, dawno temu w odległej galaktyce..." "\n" "\t"
+	"jesteś żołnierzem Rebelii z planety Hoth..." "\n" "\t" "\t"
+	"jako największy spośród asów myśliwców zostałeś wytypowany do misji życia..." "\n" "\t" "\t" "\t" "\t" "\t" "\t"
+	"zniszczenia GWIAZDY ŚMIERCI...") 
+	print("Czy jesteś gotowy podjąć się misji?(tak/nie)")
+	odp=input()
+	if odp=="tak":
+		print("Świetnie, choć zależy dla kogo... w centrum dowodzenia czekają na Ciebie rozkazy")
+		print("\x1B[3m ... docierasz do centrum dowodzenia, jesteś skierowany do Centrum Maszynowego, w którym przećwiczysz na manipulatorze trasę lotu... nie zapomnij założyć kasku!\x1B[0m")  
+		print("...zostajesz wprowadzony do manipulatora, gdzie masz szansę zweryfikować sprawność maszyny na podstawie instrukcji...") 
+		time.sleep(5)
+		print("Zgłaszasz prawidłowość wszystkich ustawień. Z wieży pada pytanie, czy jesteś gotów do startu. Jaka jest Twoja odpowiedź?")
+		answ=input()
+		if answ=="tak":
+			print("Bardzo dobrze. Możesz rozpocząć procedurę startu.")
+			print("Jesteś już w powietrzu, widzisz, że ta trasa to dla Ciebie duża nowość. Czy zgłaszasz potrzebę nagłego lądowania i chęć rezygnacji?(tak/nie)")
+			dekl=input()
+			if dekl=="nie":
+				print("Świetnie! Tego oczekuje od Ciebie cała Rebelia!")
+				print("To, co przeżyłeś w manipulatorze, było dla Ciebie ogromnym doświadczeniem. Poznałeś wiele zagrożeń związanych z misją, lecz mimo to nie decydujesz się zrezygnować...")
+				print("Po kilkunastu tygodniach ćwiczeń i testów następuje dzień przelotu próbnego, tym razem już w rzeczywistości. Twój przelot będzie jako lot patrolowy, więc polecą z Tobą inni piloci. Nie zapominaj jednak o prawdziwym celu: zidentyfikowaniu poszczególnych punktów misji w rzeczywistym przelocie.")
+				print("Gdy wracasz do bazy, nagle wieża informuje Was o bandytach Imperium, którzy gonią Was w nadziei na zemstę za niedawne straty ich myśliwców. Jak dowódca patrolu, nie namyślając się zbyt długo, uznajesz, że to świetna okazja do przetrenowania się przed dniem, kiedy czeka Cię zniszczenie Gwiazdy Śmierci.")
+				print("Czy rzeczywiście decydujesz się na walkę z myśliwcami Imperium?(tak/nie)")
+				ofc=input()	
+				print("Niestety następuje deszcz meteorytów...")
+				if i==2:
+					if ofc=="tak":
+						print("Przetrwałeś...")
+						print("Odważna decyzja, ale z myślą o wyższym celu. To się ceni!")
+						print("Razem z innymi dokonujecie absolutnego zwycięstwa w starciu z pilotami Imperium. Po powrocie do bazy dopinacie ostatnie szczegóły. Czekają Cię teraz trzy dni odpoczynku przed dniem misji.")
+						print("Nastaje dzień misji. Przychodzi do Ciebie Admirał Ackbar z pytaniem, czy utrzymujesz swoją gotowość do zniszczenia celu. Co odpowiadasz?(tak/nie)")
+						got=input()
+						if got=="tak":
+							print("Wspaniale. Admirał przypomina Ci o godzinie odprawy.")
+							print("Stawiasz się na miejscu na czas. Składane są ostatnie raporty mające na celu uaktualnić Twój obraz sytuacji. Zmierzasz do samolotu...")
+							print("Wsiadłeś do myśliwca. Sprawdziłeś uzbrojenie, plan misji. Zatapiasz się w chwili dla siebie, dokonując ostatecznego rozrachunku sumienia oraz rozważenia za i przeciw Twojemu startowi...")
+							print("\x1B[3m...podobnie, jak ostatnim razem, towarzyszyć Ci będą inni piloci, choć ich rolą będzie odciągnięcie uwagi od Ciebie...\x1B[0m")
+							print("\x1B[3m...wzniosłeś się w powietrze. Za 5 minut użyjecie Mocy i przemkniecie w kierunku Death Star - Gwiazdy Śmierci. Stacji, którą masz zniszczyć, by uratować Rebelię przed całkowitym unicestwieniem...\x1B[0m")
+							print("Jesteście blisko gwiazdy śmierci. Odpieracie ataków myśliwców obronnych. Wlatujesz w tunel, który ma Cię doprowadzić do serca Gwiazdy Śmierci - wpuszczenie tam rakiet spowoduje jej eksplozję. Przedzierając się przez zagłębienia stacji, przeżywasz moment słabości... tuż przed miejscem w którym powinieneś strzelić, powstaje w Tobie wątpliwość i rodzi się pytanie: czy dam radę?(tak/nie)")
+							destr=input()
+							if destr=="tak":
+								print("Bardzo dobrze. Wyceluj działo i zaatakuj, gdy zaświeci się czerwona kontrolka.")
+								print("\x1B[3mNastępuje moment ataku. Twoje rakiety trafiają w tunel i zmierzają w kierunku jądra stacji. Teraz jazda stąd! Przecież chcesz wrócić jako bohater;)\x1B[0m")
+								print("Mimo prób zestrzelenia, razem ze swoimi towarzyszami bez szwanku wracacie na Hoth. GWIAZDA ŚMIERCI ZOSTAŁA ZNISZCZONA!")
+								print("Po lądowaniu witają Was tłumy, a Ty na rękach jesteś niesiony przed oblicze księżniczki Lei. Gratuluje Ci ona sukcesu, a także wyraża podziękowanie w imieniu całego ludu Rebelii.")
+								print("\x1B[3m...cudowną atmosferę świętowania małego sukcesu w walce z Imperium przerywa alarm w Centrum Maszynowym, gdy okazuje się, że zbliżają się siły wroga. Czy zdecydujesz się poprowadzić swoich kolegów w walce obronnej? O tym dowiemy się jednak dopiero w sequelu...\x1B[0m")
+							else:
+									print("Serio?! W takim momencie rezygnujesz?!?! Przemyśl swoją decyzję jeszcze raz. Dobrze. Czy napewno rezygnujesz z ataku?")
+									destroy=input()
+									if destroy=="tak":
+										print("Twoja decyzja jest niezrozumiała. Równie dobrze możesz nie wracać na Hoth. \n Przegrałeś.")
+									else:
+										print("Dobrze, że zmieniłeś decyzję. A teraz: wal śmiało i zniszcz tę stację!!!")
+										print("\x1B[3m...w takim razie atakujesz... Twoje rakiety trafiają w tunel i zmierzają w kierunku jądra stacji. Teraz jazda stąd! Przecież chcesz wrócić jako bohater;)\x1B[0m")
+										print("Mimo prób zestrzelenia, razem ze swoimi towarzyszami bez szwanku wracacie na Hoth. GWIAZDA ŚMIERCI ZOSTAŁA ZNISZCZONA!")
+										print("Po lądowaniu witają Was tłumy, a Ty na rękach jesteś niesiony przed oblicze księżniczki Lei. Gratuluje Ci ona sukcesu, a także wyraża podziękowanie w imieniu całego ludu Rebelii.")
+										print("\x1B[3m...cudowną atmosferę świętowania małego sukcesu w walce z Imperium przerywa alarm w Centrum Maszynowym, gdy okazuje się, że zbliżają się siły wroga. Czy zdecydujesz się poprowadzić swoich kolegów w walce obronnej? O tym dowiemy się jednak dopiero w sequelu...\x1B[0m")							
+						else:
+							print("Zawodzisz wszystkich, przede wszystkim marnując czas i wysiłek. Choć niektórzy mogą zrozumieć Twoją decyzję, to jednak powstanie niezmywalna plama na Twoim honorze...")
+					else:
+						print("Uszkodzenia Twojego ciała są tak duże, że umierasz... żegnaj!") 
+				else:
+					print("Zawiodłeś wszystkich obywateli Rebelii. Czeka Cię kara za stratę czasu na takiego tchórza jak Ty!")
+			else:
+				print("W kokpicie pojawia się hologram księżniczki Lei, która mówi: Zawiodłeś mnie," ,imie)
+		else: 
+			print("Przegrałeś")
